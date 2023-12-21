@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task9</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            /* padding: 10px; */
+            margin: 10px;
+        }
+        h2{
+            text-align: center;
+        }
+         /* decendent selector */
+        div p{
+            font-size: large;
+            color :blueviolet;
+        }
+        #d2>#p2{
+            font-size:large;
+            color: blue;
+        }
+        /* adjcent selector */
+        #d3+#p3{
+            font-size:large;
+            color: rgb(43, 255, 0);
+            font-variant: small-caps ;
+        }
+        #d4 ~#p4{
+            font-size:large;
+            color: blue;
+        }
+        b{
+            color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 style="color:blueviolet">Task 9</h2>
+    <h2 style="color:blueviolet">1.Selectors</h2>
+        <h3 style="color:blueviolet">Decendent Selector:</h3>
+            <div>
+                <p>In CSS (Cascading Style Sheets), a descendant selector is used to select all elements that are descendants of a specified element. The selector is formed by concatenating the selectors of the ancestor and descendant elements, with a space in between. This means that the style rules will apply to the descendant element only if it is nested within the specified ancestor.</p>
+                <p>In CSS (Cascading Style Sheets), a descendant selector is used to select all elements that are descendants of a specified element. The selector is formed by concatenating the selectors of the ancestor and descendant elements, with a space in between. This means that the style rules will apply to the descendant element only if it is nested within the specified ancestor.</p>
+            </div>
+
+        <h3 style="color:blueviolet">Child Selector:</h3>
+            <p>This is a direct child paragraph.</p>
+            <div id="d2">
+                <p id="p2">In CSS, the child combinator, represented by the > symbol, is used to select all direct children of a specified element. This selector allows you to target elements that are immediately nested inside another element, without selecting descendants that are further nested.</p>
+            </div>
+            <h3 style="color:blueviolet">Adjacent Selector:</h3>
+            <div id="d3">
+            In CSS, the child combinator, represented by the > symbol, is used to select all direct children of a specified element. This selector allows you to target elements that are immediately nested inside another element, without selecting descendants that are further nested.
+            </div>
+            <p id="p3">In CSS, the child combinator, represented by the > symbol, is used to select all direct children of a specified element. This selector allows you to target elements that are immediately nested inside another element, without selecting descendants that are further nested.</p>
+            <p id="p3">In CSS, the child combinator, represented by the > symbol, is used to select all direct children of a specified element. This selector allows you to target elements that are immediately nested inside another element, without selecting descendants that are further nested.</p>
+            <h3 style="color:blueviolet">General sibling Selector:</h3>
+            <div id="d4">
+                <p id="p4">In CSS, the general sibling combinator, represented by the tilde (~) symbol, is used to select all elements that are siblings of a specified element and share the same parent, regardless of whether they are immediately following or not.</p>
+            </div>
+
+        <hr>
+        <h2 style="color:blueviolet">Set Of Best Practices </h2>
+        <ol>
+            <li><b>Be Selective with Global Selectors:</b><br>
+                Avoid using global selectors (e.g., *) unless absolutely necessary, as they can have unintended consequences and negatively impact performance.</li>
+            <li><b>Class Names for Reusability:</b><br>
+                Use meaningful class names that describe the content or purpose rather than styling details.
+                Encourage reuse of classes to maintain consistency across the website.</li>
+            <li><b>Use Descendant Selectors</b><br>
+                Be mindful of descendant selectors (parent child) and   avoid unnecessary deep nesting, which can make styles harder to override.</li>
+            <li><b>Comment your code</b>
+                Try to comment the code in where its seems necessary
+                for understanding of complex inheritence or vital things</li>
+        </ol>
+
+</body>
+</html>
